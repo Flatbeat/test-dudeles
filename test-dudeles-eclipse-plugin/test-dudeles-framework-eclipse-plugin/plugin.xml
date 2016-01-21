@@ -34,9 +34,10 @@
          
          <menu id="de.his.internal.test.dudeles.menus.menu" 
          	label="Test-Dudeles"
+         	icon="icons/the_dude.gif"
             mnemonic="TD">
             
-            <command commandId="de.his.internal.test.dudeles.eclipse.commands.generateTestDudelesCommand" mnemonic="G"/>
+            <command commandId="de.his.internal.testdudeles.eclipse.commands.generateTestDudelesCommand" mnemonic="G"/>
             
          </menu>
          
