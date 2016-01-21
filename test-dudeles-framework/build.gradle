@@ -1,0 +1,65 @@
+description = 'Test-Dudeles-Framework'
+
+apply from: script('dependencies')
+
+allprojects {
+
+	apply plugin: 'java'
+
+    group = 'de.his.internal.testdudeles.api'
+    version = '0.0.1-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+	
+}
+
+subprojects {
+
+	apply plugin: 'eclipse'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+	
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+	
+	dependencies {
+		compile deps.guava
+	
+    	testCompile deps.assertj
+		testCompile deps.hamcrest
+        testCompile deps.junit
+		testCompile deps.mockito
+    }
+	
+}
+
+File script(String name) {
+    project.file("${rootProject.projectDir}/gradle/${name}.gradle")
+}
+
+def libs = '../test-dudeles-eclipse-plugin/test-dudeles-framework-bundle/libs'
+
+task deletePluginBundleLibs(type: Delete) {
+    delete fileTree(libs) {
+        include '**/*.jar'
+    }
+}
+
+task copyLibJars(type: Copy, dependsOn: subprojects.jar) {
+    from(subprojects.jar) 
+    into project.file(libs)
+}
+
+task copyDepJars(type: Copy) {
+    from(subprojects.configurations.runtime) 
+    into project.file(libs)
+}
+
+task copyPluginBundleLibs(dependsOn: [copyLibJars, copyDepJars])
+
+task build {
+	dependsOn 'deletePluginBundleLibs'
+	finalizedBy 'copyPluginBundleLibs'
+}

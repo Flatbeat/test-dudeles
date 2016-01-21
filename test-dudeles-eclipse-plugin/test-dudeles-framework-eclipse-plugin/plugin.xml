@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+  <extension point="org.eclipse.ui.commands">
+   
+      <category id="de.his.internal.testdudeles.eclipse.commands.category"
+         name="Test-Dudeles"/>
+         
+      <command id="de.his.internal.testdudeles.eclipse.commands.generateTestDudelesCommand"
+         name="Generate Test-Dudeles"
+         defaultHandler="de.his.internal.testdudeles.eclipse.handler.GenerateDudelesCommandHandler"
+         description="Generate Test-Dudeles"
+         categoryId="de.his.internal.testdudeles.eclipse.commands.category"/>
+         
+   </extension>
+
+   <extension point="org.eclipse.ui.bindings">
+     
+      <key sequence="CTRL+SHIFT+D"
+         commandId="de.his.internal.testdudeles.eclipse.commands.generateTestDudelesCommand"
+         contextId="org.eclipse.ui.textEditorScope"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+         
+      <key sequence="CTRL+SHIFT+D"
+         commandId="de.his.internal.testdudeles.eclipse.commands.generateTestDudelesCommand"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+         
+   </extension>
+   
+  	<extension point="org.eclipse.ui.menus">
+  	
+      <menuContribution locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         
+         <menu id="de.his.internal.test.dudeles.menus.menu" 
+         	label="Test-Dudeles"
+            mnemonic="TD">
+            
+            <command commandId="de.his.internal.test.dudeles.eclipse.commands.generateTestDudelesCommand" mnemonic="G"/>
+            
+         </menu>
+         
+      </menuContribution>
+      
+   </extension>
+
+</plugin>

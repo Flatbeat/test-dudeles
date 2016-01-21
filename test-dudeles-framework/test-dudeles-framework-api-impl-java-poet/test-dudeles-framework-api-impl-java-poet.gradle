@@ -1,0 +1,11 @@
+description = 'Test-Dudeles-Framework: JavaPoet'
+
+dependencies {
+
+	compile project(':test-dudeles-framework-api')
+	
+	compile deps.hamcrest
+	
+    compile deps.javapoet
+
+}

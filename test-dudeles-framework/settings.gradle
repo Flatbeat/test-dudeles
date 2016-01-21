@@ -1,0 +1,8 @@
+include ":test-dudeles-framework-api"
+include ":test-dudeles-framework-api-impl-java-poet"
+
+rootProject.name = "test-dudeles-framework"
+
+rootProject.children.each {
+  it.buildFileName = it.name + ".gradle"
+}

@@ -1,0 +1,20 @@
+ext {
+
+    deps = [
+	
+    		assertj: 'org.assertj:assertj-core:2.+',
+    
+			commonsio: 'commons-io:commons-io:2.+',
+	
+			hamcrest: 'org.hamcrest:hamcrest-core:1.+',
+	
+	        javapoet: 'com.squareup:javapoet:1.+',
+		
+            junit: "junit:junit:4.+",
+
+            guava: "com.google.guava:guava:+",
+			
+			mockito: "org.mockito:mockito-core:1.+",
+
+    ]
+}
