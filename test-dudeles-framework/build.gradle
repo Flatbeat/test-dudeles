@@ -1,5 +1,15 @@
 description = 'Test-Dudeles-Framework'
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.palantir:gradle-baseline-java:+'
+    }
+}
+
 apply from: script('dependencies')
 
 allprojects {
@@ -11,13 +21,16 @@ allprojects {
 
     repositories {
         mavenCentral()
+		jcenter()
     }
 	
 }
 
 subprojects {
 
-	apply plugin: 'eclipse'
+	apply plugin: 'com.palantir.baseline-checkstyle'
+	apply plugin: 'com.palantir.baseline-eclipse'
+	apply plugin: 'com.palantir.baseline-findbugs'
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
