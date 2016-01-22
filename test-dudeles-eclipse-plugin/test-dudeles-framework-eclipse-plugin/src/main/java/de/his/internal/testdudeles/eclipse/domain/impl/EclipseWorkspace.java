@@ -1,9 +1,9 @@
-package de.his.internal.testdudeles.eclipse.env.impl;
+package de.his.internal.testdudeles.eclipse.domain.impl;
 
 import org.eclipse.core.resources.IFile;
 
-import de.his.internal.testdudeles.eclipse.commands.File;
-import de.his.internal.testdudeles.eclipse.env.Workspace;
+import de.his.internal.testdudeles.eclipse.domain.File;
+import de.his.internal.testdudeles.eclipse.domain.Workspace;
 
 public class EclipseWorkspace implements Workspace {
 

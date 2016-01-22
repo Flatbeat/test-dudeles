@@ -9,7 +9,7 @@
          
       <command id="de.his.internal.testdudeles.eclipse.commands.generateTestDudelesCommand"
          name="Generate Test-Dudeles"
-         defaultHandler="de.his.internal.testdudeles.eclipse.handler.GenerateDudelesCommandHandler"
+         defaultHandler="de.his.internal.testdudeles.eclipse.commands.GenerateDudelesCommandHandler"
          description="Generate Test-Dudeles"
          categoryId="de.his.internal.testdudeles.eclipse.commands.category"/>
          

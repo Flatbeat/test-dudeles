@@ -4,7 +4,7 @@ import org.eclipse.core.runtime.IAdaptable;
 
 import com.google.common.base.Optional;
 
-import de.his.internal.testdudeles.eclipse.commands.SourceFile;
+import de.his.internal.testdudeles.eclipse.domain.SourceFile;
 
 final class FileContextMenu extends AbstractEventInvocationSource {
 

@@ -1,7 +1,7 @@
 package de.his.internal.testdudeles.eclipse.commands.impl;
 
-import de.his.internal.testdudeles.eclipse.commands.File;
-import de.his.internal.testdudeles.eclipse.commands.SourceFile;
+import de.his.internal.testdudeles.eclipse.domain.File;
+import de.his.internal.testdudeles.eclipse.domain.SourceFile;
 
 final class SourceFileFromContextSelection implements SourceFile {
 

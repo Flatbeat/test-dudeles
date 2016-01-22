@@ -3,7 +3,7 @@ package de.his.internal.testdudeles.eclipse.commands.impl;
 import static de.his.internal.testdudeles.eclipse.TestDudelesEclipsePlugin.plugin;
 
 import de.his.internal.testdudeles.eclipse.commands.CommandExecutionContext;
-import de.his.internal.testdudeles.eclipse.commands.SourceFile;
+import de.his.internal.testdudeles.eclipse.domain.SourceFile;
 import de.his.internal.testdudeles.eclipse.ui.UserInterface;
 import de.his.internal.testdudeles.eclipse.ui.UserInterfaceState;
 

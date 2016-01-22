@@ -6,7 +6,7 @@ import com.google.common.base.Optional;
 
 import de.his.internal.testdudeles.eclipse.commands.ApplicationContext;
 import de.his.internal.testdudeles.eclipse.commands.EventInvocationSource;
-import de.his.internal.testdudeles.eclipse.commands.SourceFile;
+import de.his.internal.testdudeles.eclipse.domain.SourceFile;
 import de.his.internal.testdudeles.eclipse.ui.UserInterfaceState;
 import de.his.internal.testdudeles.eclipse.ui.impl.UserInterfaceStateImpl;
 

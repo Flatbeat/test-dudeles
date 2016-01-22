@@ -1,4 +1,4 @@
-package de.his.internal.testdudeles.eclipse.commands;
+package de.his.internal.testdudeles.eclipse.domain;
 
 public interface SourceFile {
 

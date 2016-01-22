@@ -2,8 +2,8 @@ package de.his.internal.testdudeles.eclipse.commands.impl;
 
 import org.eclipse.ui.IEditorPart;
 
-import de.his.internal.testdudeles.eclipse.commands.File;
-import de.his.internal.testdudeles.eclipse.commands.SourceFile;
+import de.his.internal.testdudeles.eclipse.domain.File;
+import de.his.internal.testdudeles.eclipse.domain.SourceFile;
 
 final class SourceFileFromEditor implements SourceFile {
 

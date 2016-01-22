@@ -19,7 +19,7 @@ public class TestDudeleMethodsImpl<T> implements TestDudeleMethods<T> {
 
 	@Override
 	public Iterator<T> iterator() {
-		final Builder<T> specs = ImmutableList.<T> builder();
+		final Builder<T> specs = ImmutableList.builder();
 		for (final TestDudeleMethod<T> method : methods) {
 			specs.add(method.spec());
 		}

@@ -8,8 +8,8 @@ import org.eclipse.ui.handlers.HandlerUtil;
 
 import com.google.common.base.Optional;
 
-import de.his.internal.testdudeles.eclipse.commands.File;
-import de.his.internal.testdudeles.eclipse.commands.SourceFile;
+import de.his.internal.testdudeles.eclipse.domain.File;
+import de.his.internal.testdudeles.eclipse.domain.SourceFile;
 
 final class EditorWindow extends AbstractEventInvocationSource {
 

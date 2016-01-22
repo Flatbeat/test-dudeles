@@ -2,7 +2,7 @@ package de.his.internal.testdudeles.eclipse.commands.impl;
 
 import de.his.internal.testdudeles.eclipse.commands.CommandExecutionContext;
 import de.his.internal.testdudeles.eclipse.commands.GenerateDudelesCommand;
-import de.his.internal.testdudeles.eclipse.commands.SourceFile;
+import de.his.internal.testdudeles.eclipse.domain.SourceFile;
 import de.his.internal.testdudeles.eclipse.ui.UserInterface;
 
 public final class GenerateDudelesCommandImpl implements GenerateDudelesCommand {

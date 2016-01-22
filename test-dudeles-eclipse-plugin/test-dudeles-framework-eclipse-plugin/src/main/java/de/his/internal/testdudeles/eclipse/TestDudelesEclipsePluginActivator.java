@@ -11,7 +11,6 @@ public final class TestDudelesEclipsePluginActivator extends AbstractUIPlugin {
 
 	private static TestDudelesEclipsePluginActivator instance;
 
-
 	public static TestDudelesEclipsePluginActivator getInstance() {
 		return instance;
 	}
