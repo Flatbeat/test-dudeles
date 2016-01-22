@@ -5,6 +5,6 @@ import de.his.internal.testdudeles.api.domain.TestDudeleType;
 
 public interface TestDudeleFactory<T> {
 
-	TestDudele<T> createFrom(TestDudeleType type);
+  TestDudele<T> createFrom(TestDudeleType type);
 
 }

@@ -15,51 +15,50 @@ import de.his.internal.testdudeles.api.domain.TestDudeleType;
 
 public abstract class AbstractTestDudeleType implements TestDudeleType {
 
-	private final Class<?> clazz;
+  private final Class<?> clazz;
 
-	protected AbstractTestDudeleType(final Class<?> clazz) {
-		this.clazz = clazz;
-	}
+  protected AbstractTestDudeleType(final Class<?> clazz) {
+    this.clazz = clazz;
+  }
 
-	protected final boolean isJDKClass() {
-		return clazz.isPrimitive() ||
-				clazz.getPackage().getName().startsWith("java");
-	}
+  protected final boolean isJDKClass() {
+    return clazz.isPrimitive() || clazz.getPackage().getName().startsWith("java");
+  }
 
-	protected final Class<?> clazz() {
-		return clazz;
-	}
+  protected final Class<?> clazz() {
+    return clazz;
+  }
 
-	@Override
-	public Collection<Method> allMethods() {
-		return newArrayList(clazz().getMethods());
-	}
+  @Override
+  public Collection<Method> allMethods() {
+    return newArrayList(clazz().getMethods());
+  }
 
-	@Override
-	public Collection<Method> allMethodsWithReturnValues() {
-		final Builder<Method> methods = ImmutableList.builder();
-		for (final Method method : allMethods()) {
-			if(isNoVoidMethod(method)) {
-				methods.add(method);
-			}
-		}
-		return methods.build();
-	}
+  @Override
+  public Collection<Method> allMethodsWithReturnValues() {
+    final Builder<Method> methods = ImmutableList.builder();
+    for (final Method method : allMethods()) {
+      if (isNoVoidMethod(method)) {
+        methods.add(method);
+      }
+    }
+    return methods.build();
+  }
 
-	@Override
-	public Collection<Method> allMethodsWithVoidReturnValues() {
-		final Builder<Method> methods = ImmutableList.builder();
-		for (final Method method : allMethods()) {
-			if(isVoidMethod(method)) {
-				methods.add(method);
-			}
-		}
-		return methods.build();
-	}
+  @Override
+  public Collection<Method> allMethodsWithVoidReturnValues() {
+    final Builder<Method> methods = ImmutableList.builder();
+    for (final Method method : allMethods()) {
+      if (isVoidMethod(method)) {
+        methods.add(method);
+      }
+    }
+    return methods.build();
+  }
 
-	@Override
-	public Type type() {
-		return clazz;
-	}
+  @Override
+  public Type type() {
+    return clazz;
+  }
 
 }

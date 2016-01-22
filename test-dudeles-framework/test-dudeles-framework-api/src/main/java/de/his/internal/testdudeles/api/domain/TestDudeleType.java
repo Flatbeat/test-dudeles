@@ -6,12 +6,12 @@ import java.util.Collection;
 
 public interface TestDudeleType {
 
-	Collection<Method> allMethods();
+  Collection<Method> allMethods();
 
-	Collection<Method> allMethodsWithReturnValues();
+  Collection<Method> allMethodsWithReturnValues();
 
-	Collection<Method> allMethodsWithVoidReturnValues();
+  Collection<Method> allMethodsWithVoidReturnValues();
 
-	Type type();
+  Type type();
 
 }
