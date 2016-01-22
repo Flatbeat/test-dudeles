@@ -11,7 +11,7 @@ buildscript {
     dependencies {
         classpath 'com.palantir:gradle-baseline-java:+'
 		classpath 'com.palantir:jacoco-coverage:+'
-		classpath "gradle.plugin.com.github.sherter.google-java-format:google-java-format:0.1-SNAPSHOT"
+		classpath "gradle.plugin.com.github.sherter.google-java-format:google-java-format:0.2-SNAPSHOT"
     }
 }
 
