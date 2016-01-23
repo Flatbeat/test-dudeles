@@ -13,4 +13,5 @@ public enum MethodUtils {
   public static boolean isVoidMethod(final Method method) {
     return void.class.equals(method.getReturnType());
   }
+
 }

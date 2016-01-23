@@ -31,7 +31,7 @@ public abstract class AbstractTestDudeleType implements TestDudeleType {
 
   @Override
   public Collection<Method> allMethods() {
-    return newArrayList(clazz().getMethods());
+    return newArrayList(clazz().getDeclaredMethods());
   }
 
   @Override
